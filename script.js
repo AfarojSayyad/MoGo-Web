@@ -10,6 +10,16 @@ let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
+// dropdown
+let dropdown = document.querySelector('#dropdown');
+let box1 = document.querySelector('.box1');
+
+let dropdown2 = document.querySelector('#dropdown2');
+let box2 = document.querySelector('.box2');
+
+let dropdown3 = document.querySelector('#dropdown3');
+let box3 = document.querySelector('.box3');
+
 // home section video
 let videoBtn = document.querySelectorAll('.vid-btn');
 
@@ -19,14 +29,31 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
     loginForm.classList.remove('active');
+    box1.classList.remove('active');
+    box2.classList.remove('active');
+    box3.classList.remove('active');
 }
-
+// menu
 menu.addEventListener('click', () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 });
+// dropdown
+dropdown.addEventListener('click', () =>{
+  dropdown.classList.toggle('fa-angle-up');
+  box1.classList.toggle('active');
+});
 
+dropdown2.addEventListener('click', () =>{
+  dropdown2.classList.toggle('fa-angle-up');
+  box2.classList.toggle('active');
+});
 
+dropdown3.addEventListener('click', () =>{
+  dropdown3.classList.toggle('fa-angle-up');
+  box3.classList.toggle('active');
+});
+// search button
 searchBtn.addEventListener('click',()=>{
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');

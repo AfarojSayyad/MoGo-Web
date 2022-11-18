@@ -18,14 +18,16 @@ html{
     scroll-behavior: smooth;
 }
 section{
-    padding: 2rem 9%;
+    padding: 5rem 9%;
 }
 h2{
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Kaushan Script', cursive;
+    padding-bottom: 10px;
 }
 p{
     font-size: 1.2rem;
@@ -144,9 +146,7 @@ header .search-bar-container{
   .home .content h3{
     font-size: 4.5rem;
     color:#fff;
-    /* text-transform: uppercase;
-    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1); */
-    /* font-family: 'Kaushan Script', cursive; */
+   
   }
   .home .content h1{
     text-transform: uppercase;
@@ -167,45 +167,37 @@ header .search-bar-container{
   .home:hover{
     background-image: url('./images/background.jpg');
   }
-  /* about us */
+  /* about section */
   .about{
     display: block;
-    /* display: flex; */
     align-items: center;
     text-align: center;
   }
-  .about .content {
+  .about-content {
     flex-wrap: wrap;
-    /* padding: 5rem 10rem; */
   }
-  .about .content .about-img{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    padding: 5rem 1rem;
-    align-items: center;
-    justify-content: center;
+  .about p, .service p{
+    padding:2rem 10rem;
   }
-  .about .content .about-img img{
-    width: 30%;
-  }
-  .about .content .about-img .box:hover{
-    box-shadow: 10px 10px 54px rgba(158, 31, 31, 0.1);
-  }
-/*  */
+ 
   .about .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
-    padding: 5rem 2rem;
   }
   .about .box-container .box{
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
     position: relative;
     width: 30%;
+    height: 100%;
+  }
+  .about .box-container .box:hover{
+    border: 7px solid #95e1d3;
+    border-top: none;
+    border-left: none;
   }
 
   .box-container .box img{
@@ -221,14 +213,13 @@ header .search-bar-container{
     width: 100%;
     text-align: center;
     background: rgba(252, 147, 147, 0.7);
-    padding: 2rem;
-    padding-top: 5rem;
     color: #fff;
     font-size: 2rem;
+    padding: 2rem;
+    padding-top: 5rem;
 }
 .about .box-container .box .content a{
     color: #fff;
-    /* font-size: 2.5rem; */
 }
 .about .box-container .box:hover .content{
     top: 0;
@@ -237,13 +228,160 @@ header .search-bar-container{
 }
 .about .box-container .box h3{
     font-size: 2.5rem;
-    color: var(--orange);
 }
-.about .box-container .box .content p{
-    font-size: 1.5rem;
-    color: #eee;
-    padding: .5rem 0;
+
+/* banner section*/
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #95e1d3;
+  padding: 0;
 }
+
+.banner .box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #fff;
+  border-top: none;
+  border-bottom: none;
+  height: 20vh;
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+.banner .box h1{
+  font-weight: 600;
+  font-size: 3rem;
+}
+.banner .box p{
+  text-transform: uppercase;
+} 
+/* services section */
+.services-text{
+  text-align: center;
+  padding: 20px;
+}
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  
+}
+.services .box-container .box{
+  display: flex;
+  flex: 1 1 30rem;
+  flex-direction: row;
+  border-radius: .5rem;
+  padding: 2rem;
+  cursor:context-menu;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+}
+.services .box-container .box i{
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  color: #95e1d3
+}
+.services .box-container .box h2{
+  font-size: 1.5rem;
+  color: #333;
+  padding-bottom: 10px;
+}
+.services .box-container .box .content p{
+  font-size: .5rem;
+  color: #666;
+  text-transform: none;
+}
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+/* design section*/
+#design-app{
+  text-align: center;
+  background-image: url('./images/design/b1.jpg');
+}
+#design-app .video{
+  width: 70%;
+  height: 50%;
+  margin: 20px auto 0 auto;
+}
+#design-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+/* service section*/
+.service{
+  text-align: center;
+}
+
+.service-text .service-box{
+  display: flex;
+  border:1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  flex-wrap: wrap;
+  position: relative;
+}
+.service-text .service-box i{
+  font-size: 2rem;
+  color: #95e1d3;
+}
+
+.service-text .service-box h2{
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.fa-angle-down{
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  
+}
+
+#service-head{
+  display: flex;
+  align-items: center;
+}
+#service-head img{
+  width: 50%;
+  height: auto;
+}
+#service-head div{
+  padding-left:40px;
+}
+#service-head .box1, .box2, .box3{
+  height:70px;
+  width:100%;
+  border:1px solid #ccc;
+  font-size: 1.1rem;
+  overflow:auto;
+  text-align: left;
+  line-height: 30px;
+  padding: 10px 5px;
+  /* display:none; */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+#service-head .box1.active{
+  /* display: flex; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+#service-head .box2.active{
+  /* display: flex; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+#service-head .box3.active{
+  /* display: flex; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+/*  
+*/
+
 
   
 
@@ -259,11 +397,17 @@ header .search-bar-container{
     header{
         padding: 2rem;
     }
+    .box{
+      height: 10vh;
+      width: 15%;
+    }
   }
   @media (max-width:768px){
+    /* menubar */
     #menu-bar{
         display: initial;
     }
+    
     header .navbar{
         position: absolute;
         top:100%;
@@ -285,5 +429,64 @@ header .search-bar-container{
         margin:1.5rem 0;
         background: rgb(253, 170, 170);
     }
-    
+    /* about section */
+    .about .box-container {
+      flex-direction: column;
+  }
+  .about .box-container .box{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* service */
+  #service-head{
+    flex-direction: column;
+  }
+  #service-head div {
+    padding-left: 0px;
+  }
+  #service-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+@media (max-width:450px){
+  html{
+      font-size: 50%;
+  }
+  /* about */
+  .about p, .service p{
+    padding:2rem 0rem;
+  }
+  .box h1{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .box p{
+    font-size: .8rem;
+  }
+  /* banner */
+  .banner .box {
+    height: 10vh;
+  }
+  /* services */
+  .services .box-container .box{
+    padding: 1rem 0;
+  }
+  /* design */
+  #about-app .video {
+    width: 100%;
+}
+/* service */
+#service-head{
+  flex-direction: column;
+}
+#service-head div {
+  padding-left: 0px;
+}
+#service-head img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 }
