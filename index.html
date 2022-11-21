@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mogo Website</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
      <!-- fontawsome cdn link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
      <!-- css link -->
      <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- HEADER SECTION -->
     <header>
 
         <div id="menu-bar" class="fas fa-bars"></div>
@@ -25,7 +28,7 @@
         </ul>
         <div class="icons">
             
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping" id="login-btn"></i>
             <i class="fas fa-search" id="search-btn"></i>
         </div>
         <form action="" class="search-bar-container">
@@ -34,6 +37,22 @@
         </form>  
 
     </header>
+    <!-- CART SECTION -->
+
+    <div class="cart-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h2>#Cart</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <img src="./images/cart.png" alt="">
+            <input type="email" class="box" placeholder="Apply your cart coupon here">
+            
+            <input type="submit" value="Submit" class="btn">
+        </form>
+
+    </div>
 
     <!-- HOME SECTION -->
     <section class="home" id="home">
@@ -42,16 +61,17 @@
             <h1>WELCOME TO MOGO</h1>
             <a href="#" class="btn"> LEARN MORE</a>
         </div>
-        <!-- <button>LEARN MORE</button> -->
     </section>
 
-    <!-- about section -->
+    <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="about-content">
 
             <h3>what we do</h3>
             <h2>story about us</h2>
+            <span class="line">________</span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero, accusantium at cumque esse debitis aut architecto dolorum, obcaecati sint, odio nesciunt assumenda iusto? Repellat repellendus saepe natus deserunt in.</p>
+            
             <div class="box-container">
 
                 <div class="box">
@@ -87,9 +107,8 @@
 
     </section>
 
-    <!-- banner section -->
+    <!-- BANNER SECTION -->
     <section class="banner">
-        <!-- <div class="container"> -->
             <div class="box" id="box1">
                 <h1>42</h1>
                 <p>web design projects</p>
@@ -110,15 +129,15 @@
                 <h1>24</h1>
                 <p>members</p>
             </div>
-        <!-- </div> -->
     </section>
 
-    <!-- services section -->
+    <!-- SECVICES SECTION -->
     <section class="services" id="services">
         <div class="services-text">
 
             <h3>We work with</h3>
             <h2>amazing services</h2>
+            <span class="line">________</span>
         </div>
         <div class="box-container">
 
@@ -172,20 +191,22 @@
 
     </section>
 
-    <!-- unique design section -->
+    <!-- DESIGN SECTION -->
     <section id="design-app">
         <h3>For all devices</h3>
         <h2>unique design</h2>
+        <span class="line">________</span>
         <div class="video">
             <video autoplay muted loop src="./images/design/1.mp4"></video>
         </div>
     </section>
 
-    <!-- service section-->
+    <!--  SERVICE SECTION-->
     <section class="service" id="service">
 
             <h3>Service</h3>
             <h2>what we do</h2>
+            <span class="line">________</span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero, accusantium at cumque esse debitis aut architecto dolorum, obcaecati sint, odio nesciunt assumenda iusto? Repellat repellendus saepe natus deserunt in.</p>
 
             <div id="service-head">
@@ -193,7 +214,7 @@
                 <img src="./images/work/work.jpg" alt="">
                 <div class="service-text">
                     <div class="service-box">
-                        <i class="fa-regular fa-image"></i>
+                        <i class="fa-regular fa-image icon"></i>
                         <h2>photography </h2>
                         <i class="fa-solid fa-angle-down" id="dropdown"></i>
                     </div>
@@ -203,7 +224,7 @@
                     </div>
 
                     <div class="service-box">
-                        <i class="fa-solid fa-timeline"></i>
+                        <i class="fa-solid fa-timeline icon"></i>
                         <h2>creativity</h2>
                         <i class="fa-solid fa-angle-down" id="dropdown2"></i>
                     </div>
@@ -214,7 +235,7 @@
 
                         
                         <div class="service-box">
-                            <i class="fa-solid fa-bullseye"></i>
+                            <i class="fa-solid fa-bullseye icon"></i>
                             <h2>web design</h2>
                             <i class="fa-solid fa-angle-down" id="dropdown3"></i>
                         </div>
@@ -230,11 +251,324 @@
 
     </section>
 
+    <!-- SWIPER SECTION -->
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <div class="mySlides-container">
+                <div>
+
+                    <img src="./images/pic1.png" alt="">
+                </div>
+                <div class="swiper-text">
+
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel quasi odit! Ut at voluptate accusantium soluta deleniti dolorum natus.</q>
+                    <h3 class="author"><span class="line">-</span> Emma Stone</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides">
+            <div class="mySlides-container">
+
+                <img src="./images/pic2.png" alt="">
+                <div class="swiper-text">
+
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel quasi odit! Ut at voluptate accusantium soluta deleniti dolorum natus.</q>
+                    <h3 class="author"><span class="line">-</span> John Keats</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mySlides">
+            <div class="mySlides-container">
+
+                <img src="./images/pic3.png" alt="">
+                <div class="swiper-text">
+
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel quasi odit! Ut at voluptate accusantium soluta deleniti dolorum natus.</q>
+                    <h3 class="author"><span class="line">-</span> Catherine Sprinz</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="mySlides-container">
+
+                <img src="./images/pic4.png" alt="">
+                <div class="swiper-text">
+
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel quasi odit! Ut at voluptate accusantium soluta deleniti dolorum natus.</q>
+                    <h3 class="author"><span class="line">-</span> William Smith</h3>
+                </div>
+            </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+    </div>
+
+    <!-- TEAM SECTION -->
+    <section class="team">
+
+        <div class="team-content">
+
+            <h3>who we are</h3>
+            <h2>meet our team</h2>
+            <span class="line">________</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero, accusantium at cumque esse debitis aut architecto dolorum, obcaecati sint, odio nesciunt assumenda iusto? Repellat repellendus saepe natus deserunt in.</p>
+            <div class="box-container">
+                <div class="box1">
+
+                    <div class="box">
+                        <img src="./images/our_team/p1.jpg" alt="">
+                        
+                        <div class="content">
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </span>
+                             <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </span>
+                                </a>
+                             <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <h2>mathew dix</h2>
+                    <span>Graphic Dix</span> 
+                    
+                </div>
+
+            
+                <div class="box1">
+
+                    <div class="box">
+                        <img src="./images/our_team/p2.jpg" alt="">
+                        
+                        <div class="content">
+                           
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </span>
+                             <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </span>
+                                </a>
+                             <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </span>
+                            
+                             
+                        </div>
+                    </div>
+                   
+                    <h2>christopher campbell</h2>
+                    <span>Branding /UX design</span>
+                </div>
+
+                <div class="box1">
+                    
+                    <div class="box">
+                        <img src="./images/our_team/p3.jpg" alt="">
+                        
+                        
+                        <div class="content">
+                            <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </span>
+                             <span>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </span>
+                                </a>
+                             <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#"> 
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </span>
+                            
+                        </div>
+                    </div>
+    
+                    <h2>michel fertig</h2>
+                    <span>Developer</span>
+                </div>
+                </div>
+           
+
+        </div>
+
+    </section>
+
+    <!-- LOGO BANNER SECTION -->
+    <section class="logo-banner">
+        <img src="./images/logo_banner/img-1.png" alt="">
+        <img src="./images/logo_banner/img-2.png" alt="">
+        <img src="./images/logo_banner/img-3.png" alt="">
+        <img src="./images/logo_banner/img-4.png" alt="">
+        <img src="./images/logo_banner/img-5.png" alt="">
+        <img src="./images/logo_banner/img-6.png" alt="">
+    </section>
+
+    <!-- SOME OF WORK SECTION -->
+    <section class="some-work" id="work">
+        <div class="some-work-content">
+            <h3>what we do</h3>
+            <h2>some of our work</h2>
+            <span class="line">________</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero, accusantium at cumque esse debitis aut architecto dolorum, obcaecati sint, odio nesciunt assumenda iusto? Repellat repellendus saepe natus deserunt in.</p>
+        </div>
+        <div class="row"> 
+            <div class="column">
+                <div class="box">
+                    <img src="./images/some_work/img-1.jpg">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/some_work/img-5.jpg">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+              
+             
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="./images/some_work/img-2.jpg" style="width:100%">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>  
+                <div class="box">
+                    <img src="./images/some_work/img-6.jpg" style="width:100%">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>              
+              
+              
+              
+              
+            </div>  
+            <div class="column">
+                <div class="box">
+                    <img src="./images/some_work/img-3.jpg" style="width:100%">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+              
+              
+            </div>
+            <div class="column">
+                <div class="box">
+                    <img src="./images/some_work/img-4.jpg">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div><div class="box">
+                    <img src="./images/some_work/img-7.jpg">
+                    <div class="content">
+                        <a href="#" class="btn"><i class="fa-regular fa-image"></i></a>
+                            <p>creatively designed</p>
+                            <span>Lorem ipsum dolor sit</span>
+                    </div>
+                </div>
+              
+              
+            </div>
+          </div>
+    </section>
+
+    
+
+    
+        
+        <!--  -->
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+
 
 
         <!--  -->
     <!-- swipper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- JS script -->
     <script src="./script.js"></script>
     

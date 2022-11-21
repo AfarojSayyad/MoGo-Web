@@ -3,7 +3,7 @@ let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
 // login button
 let formBtn = document.querySelector('#login-btn');
-let loginForm = document.querySelector('.login-form-container');
+let loginForm = document.querySelector('.cart-container');
 let formClose = document.querySelector('#form-close');
 
 // menu bar
